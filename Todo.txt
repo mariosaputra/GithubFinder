@@ -1,0 +1,12 @@
+- alert
+- x clear
+- null text
+- blank clear profile
+- member since time delete
+- display bio, email, repos
+
+Technology:
+
+- Javascript
+- FetchAPI
+- Bootstrap
