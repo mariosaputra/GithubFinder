@@ -5,8 +5,13 @@ class UI {
     github.getUser(username)
       .then(res => {
 
+        console.log(res.profileData.message);
+
         if (res.profileData.message === "Not Found") {
+
           //Show alert
+          this.showAlert();
+          
         }
         else {
           console.log(username);
@@ -42,5 +47,23 @@ class UI {
           document.getElementById('profile').innerHTML = output;
         }
       })
+  }
+
+  showAlert() {
+
+    const searchContainer = document.getElementById('search-container');
+
+    const alertElement = document.querySelector('.alert'); 
+    if(alertElement)
+    { 
+      alertElement.remove();
+    }
+
+    let alert = document.createElement("div");
+    alert.className = "alert alert-warning mt-3";
+    alert.innerHTML = "User not found!";
+
+    searchContainer.appendChild(alert); 
+
   }
 }
