@@ -1,12 +1,21 @@
 //Init Github Client
-github = new Github;
+const github = new Github;
+
+let searchUsername = '';
 
 //Search Input
 
-const searchUser = document.getElementById('search-field');
+const searchField = document.getElementById('search-field');
+const searchButton = document.getElementById('search-button');
 
-searchUser.addEventListener('keyup', (e) => {
-  const searchUsername = e.target.value;
+searchField.addEventListener('keyup', (e) => {
+  searchUsername = e.target.value;
+
+})
+
+searchButton.addEventListener('click', (e) => {
+
+  e.preventDefault();
 
   if(searchUsername != ''){
     //Make Http Call
@@ -20,10 +29,12 @@ searchUser.addEventListener('keyup', (e) => {
         else
         {
             //Show profile
+            console.log(res.profileData.name);
         }
       });
   }
   else {
     //Clear Profile
   }
+
 })
