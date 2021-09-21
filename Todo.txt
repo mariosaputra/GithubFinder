@@ -1,6 +1,3 @@
-- alert
- - clear alert
- 
 - x clear
 - null text
 - blank clear profile
