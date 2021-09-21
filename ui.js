@@ -7,8 +7,6 @@ class UI {
     github.getUser(username)
       .then(res => {
 
-        console.log(res.profileData.message);
-
         if (res.profileData.message === "Not Found") {
 
           //Show alert
