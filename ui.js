@@ -2,6 +2,8 @@ class UI {
 
   showProfile(username) {
 
+    this.clear();
+
     github.getUser(username)
       .then(res => {
 
@@ -51,19 +53,26 @@ class UI {
 
   showAlert() {
 
-    const searchContainer = document.getElementById('search-container');
+    this.clear();
 
-    const alertElement = document.querySelector('.alert'); 
-    if(alertElement)
-    { 
-      alertElement.remove();
-    }
+    const searchContainer = document.getElementById('search-container');
 
     let alert = document.createElement("div");
     alert.className = "alert alert-warning mt-3";
     alert.innerHTML = "User not found!";
 
     searchContainer.appendChild(alert); 
+
+  }
+
+  clear() {
+    
+    const alertElement = document.querySelector('.alert'); 
+    
+    if(alertElement)
+    { 
+      alertElement.remove();
+    }
 
   }
 }
