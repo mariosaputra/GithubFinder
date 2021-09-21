@@ -15,8 +15,9 @@ class UI {
           this.showAlert();
           
         }
-        else {
-          console.log(username);
+        else {      
+
+          this.replaceNull(res.profileData);
 
           let output =
             `
@@ -77,4 +78,13 @@ class UI {
     }
 
   }
+
+  replaceNull(obj) {
+     Object.keys(obj).forEach(key => {
+        if(!obj[key]){
+          obj[key] = '-';
+        }
+    });   
+  }
+
 }
