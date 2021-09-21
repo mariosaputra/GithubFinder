@@ -15,7 +15,11 @@ class UI {
         }
         else {      
 
+          //replace null text  
           this.replaceNull(res.profileData);
+
+          //remove time
+          res.profileData.created_at = res.profileData.created_at.slice(0,10);
 
           let output =
             `
