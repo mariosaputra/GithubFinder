@@ -66,6 +66,8 @@ class UI {
   }
 
   clear() {
+
+    document.getElementById('profile').innerText = '';
     
     const alertElement = document.querySelector('.alert'); 
     
