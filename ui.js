@@ -39,7 +39,7 @@ class UI {
                     <br/>
                     <br/>
                     <ul class="list-group">
-                      <li class="list-group-item bg-primary mb-1">${res.profileData.bio}</li>
+                      <li class="list-group-item bg-success mb-1">${res.profileData.bio}</li>
                       <li class="list-group-item bg-light text-dark mb-1">Email : ${res.profileData.email}</li>                    
                       <li class="list-group-item bg-light text-dark mb-1">Company : ${res.profileData.company}</li>
                       <li class="list-group-item bg-light text-dark mb-1">Blog : ${res.profileData.blog}</li>
@@ -50,7 +50,7 @@ class UI {
                 </div>
               </div> 
 
-              <h4> Latest Repost: </h4>             
+              <h5> Last Updated Repos: </h5>             
             `;
 
 
@@ -58,7 +58,7 @@ class UI {
               (res.reposData).forEach(data => {
                 output += 
                 `
-                  <div class="card card-body">
+                  <div class="card card-body mb-2">
                     <div class="row">
                       <div class="col-md-6">
                         ${data.name}
