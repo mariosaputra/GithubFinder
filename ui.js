@@ -39,6 +39,8 @@ class UI {
                     <br/>
                     <br/>
                     <ul class="list-group">
+                      <li class="list-group-item bg-primary mb-1">${res.profileData.bio}</li>
+                      <li class="list-group-item bg-light text-dark mb-1">Email : ${res.profileData.email}</li>                    
                       <li class="list-group-item bg-light text-dark mb-1">Company : ${res.profileData.company}</li>
                       <li class="list-group-item bg-light text-dark mb-1">Blog : ${res.profileData.blog}</li>
                       <li class="list-group-item bg-light text-dark mb-1">Location : ${res.profileData.location}</li>
@@ -84,7 +86,7 @@ class UI {
   replaceNull(obj) {
      Object.keys(obj).forEach(key => {
         if(!obj[key]){
-          obj[key] = '-';
+          obj[key] = '';
         }
     });   
   }

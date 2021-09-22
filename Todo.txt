@@ -1,5 +1,3 @@
-- member since time delete
-- display bio, email
 - repos
 
 Technology:
