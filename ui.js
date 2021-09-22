@@ -32,10 +32,10 @@ class UI {
                     </div>
                   </div>
                   <div class="col-md-9">
-                    <span class="badge bg-primary">Public Repost : ${res.profileData.public_repos}</span>
-                    <span class="badge bg-secondary">Public Gist : ${res.profileData.public_gist}</span>
-                    <span class="badge bg-success">Followers : ${res.profileData.followers}</span>
-                    <span class="badge bg-info">Following : ${res.profileData.following}</span>
+                    <span class="badge bg-dark">Public Repost : ${res.profileData.public_repos}</span>
+                    <span class="badge bg-dark">Public Gist : ${res.profileData.public_gist}</span>
+                    <span class="badge bg-dark">Followers : ${res.profileData.followers}</span>
+                    <span class="badge bg-dark">Following : ${res.profileData.following}</span>
                     <br/>
                     <br/>
                     <ul class="list-group">
@@ -48,8 +48,32 @@ class UI {
                     </ul>
                   </div>           
                 </div>
-              </div>   
+              </div> 
+
+              <h4> Latest Repost: </h4>             
             `;
+
+
+
+              (res.reposData).forEach(data => {
+                output += 
+                `
+                  <div class="card card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        ${data.name}
+                      </div> 
+                      <div class="col-md-6">
+                        <span class="badge bg-info">Info</span>
+                        <span class="badge bg-info">info</span>          
+                      </div>           
+                    </div>    
+                    </div>
+                  </div>   
+                `
+              })
+
+
 
           document.getElementById('profile').innerHTML = output;
         }
