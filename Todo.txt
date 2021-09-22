@@ -1,4 +1,7 @@
 - repos
+ - display info
+ - link to repos
+ - margin
 
 Technology:
 
