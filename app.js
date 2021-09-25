@@ -7,6 +7,11 @@ const ui = new UI;
 
 const searchField = document.getElementById('search-field');
 const searchButton = document.getElementById('search-button');
+const navbar = document.getElementById('navbar');
+
+navbar.addEventListener('click', (e) => {
+  document.location.reload();
+});
 
 searchButton.addEventListener('click', (e) => {
 
