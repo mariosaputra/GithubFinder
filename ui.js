@@ -63,8 +63,9 @@ class UI {
                       <div class="col-md-6"><a href=${data.html_url}>${data.name}</a>
                       </div> 
                       <div class="col-md-6">
-                        <span class="badge bg-info">Info</span>
-                        <span class="badge bg-info">info</span>          
+                        <span class="badge bg-info">Watcher: ${data.watchers_count}</span>
+                        <span class="badge bg-info">Stars: ${data.stargazers_count}</span>
+                        <span class="badge bg-info">Forks: ${data.forks_count}</span>      
                       </div>           
                     </div>    
                     </div>
