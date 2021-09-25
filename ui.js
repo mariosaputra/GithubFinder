@@ -42,7 +42,7 @@ class UI {
                       <li class="list-group-item bg-success mb-1">${res.profileData.bio}</li>
                       <li class="list-group-item bg-light text-dark mb-1">Email : ${res.profileData.email}</li>                    
                       <li class="list-group-item bg-light text-dark mb-1">Company : ${res.profileData.company}</li>
-                      <li class="list-group-item bg-light text-dark mb-1">Blog : ${res.profileData.blog}</li>
+                      <li class="list-group-item bg-light text-dark mb-1">Blog : <a href="${res.profileData.blog}">${res.profileData.blog}</a></li>
                       <li class="list-group-item bg-light text-dark mb-1">Location : ${res.profileData.location}</li>
                       <li class="list-group-item bg-light text-dark mb-1">Member Since : ${res.profileData.created_at}</li>                
                     </ul>
@@ -60,8 +60,7 @@ class UI {
                 `
                   <div class="card card-body mb-2">
                     <div class="row">
-                      <div class="col-md-6">
-                        ${data.name}
+                      <div class="col-md-6"><a href=${data.html_url}>${data.name}</a>
                       </div> 
                       <div class="col-md-6">
                         <span class="badge bg-info">Info</span>

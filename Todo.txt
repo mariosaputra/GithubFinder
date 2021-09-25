@@ -1,7 +1,5 @@
 - repos
  - display info
- - link to repos
- - link to blog
 
 Technology:
 
