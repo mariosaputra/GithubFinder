@@ -33,7 +33,7 @@ class UI {
                   </div>
                   <div class="col-md-9">
                     <span class="badge bg-dark">Public Repost : ${res.profileData.public_repos}</span>
-                    <span class="badge bg-dark">Public Gist : ${res.profileData.public_gist}</span>
+                    <span class="badge bg-dark">Public Gist : ${res.profileData.public_gists}</span>
                     <span class="badge bg-dark">Followers : ${res.profileData.followers}</span>
                     <span class="badge bg-dark">Following : ${res.profileData.following}</span>
                     <br/>
