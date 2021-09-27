@@ -40,11 +40,11 @@ class UI {
                     <br/>
                     <ul class="list-group">
                       <li class="list-group-item bg-success mb-1">${res.profileData.bio}</li>
-                      <li class="list-group-item bg-light text-dark mb-1">Email : ${res.profileData.email}</li>                    
-                      <li class="list-group-item bg-light text-dark mb-1">Company : ${res.profileData.company}</li>
-                      <li class="list-group-item bg-light text-dark mb-1">Blog : <a href="${res.profileData.blog}">${res.profileData.blog}</a></li>
-                      <li class="list-group-item bg-light text-dark mb-1">Location : ${res.profileData.location}</li>
-                      <li class="list-group-item bg-light text-dark mb-1">Member Since : ${res.profileData.created_at}</li>                
+                      <li class="list-group-item bg-light text-dark mb-1">📧 : ${res.profileData.email}</li>                    
+                      <li class="list-group-item bg-light text-dark mb-1">🏢 : ${res.profileData.company}</li>
+                      <li class="list-group-item bg-light text-dark mb-1">🔗 : <a href="${res.profileData.blog}">${res.profileData.blog}</a></li>
+                      <li class="list-group-item bg-light text-dark mb-1">🏠 : ${res.profileData.location}</li>
+                      <li class="list-group-item bg-light text-dark mb-1">📅 : Since ${res.profileData.created_at}</li>                
                     </ul>
                   </div>           
                 </div>
